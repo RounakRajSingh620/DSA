@@ -25,7 +25,7 @@ public:
 };
 
 int main() {
-    // Example usage:
+   
     Solution solution;
     vector<int> arr = {1, 3, 20, 4, 1, 0};
     int peakIndex = solution.peakIndexInMountainArray(arr);
