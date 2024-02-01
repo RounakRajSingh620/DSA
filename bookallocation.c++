@@ -56,7 +56,6 @@ int allocationBooks(std::vector<int> arr, int n, int m)
 
 int main()
 {
-    // Example usage
     std::vector<int> arr = {12, 34, 67, 90};
     int n = arr.size();
     int m = 2;
