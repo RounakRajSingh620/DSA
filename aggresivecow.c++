@@ -8,6 +8,7 @@ using namespace std;
 bool isPossible(vector<int> &stalls, int k, int mid)
 {
     int cowCount = 1;
+    
     int lastPos = stalls[0];
 
     for (int i = 0; i < stalls.size(); i++)
