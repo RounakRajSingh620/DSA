@@ -30,8 +30,6 @@ bool checkPalindrome(char a[], int n)
     return 1;
 }
 
-
-
 int getLength(char name[])
 {
     int count = 0;
@@ -53,11 +51,6 @@ int main()
 
     int len = getLength(name);
     cout << "Length: " << len << endl;
-
-   
-
-    cout << "Your name is ";
-    cout << name << endl;
 
     cout << "Palindrome or Not: " << checkPalindrome(name, len) << endl;
     return 0;
