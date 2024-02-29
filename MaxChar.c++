@@ -24,8 +24,8 @@ char getMaxOccChar(string s)
             maxi = arr[i];
         }
     }
-    char finalAns = 'a' + ans;
-    return finalAns;
+    return 'a' + ans;
+
 }
 int main()
 {
