@@ -8,7 +8,6 @@ int main() {
     cout << "Enter your name: ";
     cin.getline(name, MAX_LENGTH);
 
-    cout << "Hello, " << name << "!" << endl;
-
+    cout  << name << endl;
     return 0;
 }
