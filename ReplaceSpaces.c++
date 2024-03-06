@@ -2,9 +2,9 @@
 #include <string>
 using namespace std;
 
-std::string replaceSpaces(std::string &str)
+string replaceSpaces(string &str)
 {
-    std::string temp = "";
+    string temp = "";
     for (int i = 0; i < str.length(); i++)
     {
         if (str[i] == ' ')
@@ -23,10 +23,10 @@ std::string replaceSpaces(std::string &str)
 
 int main()
 {
-    std::string exampleString = "Hello World! This is a test string.";
-    std::cout << "Original string: " << exampleString << std::endl;
+    string exampleString = "Hello World! This is a test string.";
+    cout << "Original string: " << exampleString << endl;
     cout << endl;
-    std::string modifiedString = replaceSpaces(exampleString);
-    std::cout << "Modified string: " << modifiedString << std::endl;
+    string modifiedString = replaceSpaces(exampleString);
+    cout << "Modified string: " << modifiedString << endl;
     return 0;
 }
