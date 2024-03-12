@@ -56,7 +56,7 @@ public:
 
 int main() {
     Solution solution;
-    string s1 = "abc";
+    string s1 = "ab";
     string s2 = "eidbaooo";
     
     if (solution.checkInclusion(s1, s2)) {
