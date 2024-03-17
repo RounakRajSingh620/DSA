@@ -1,2 +1,1 @@
-cout << "Your name is ";
-    cout << name << endl;
+for (int col = 0; col < 3; col++)
