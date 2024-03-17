@@ -54,7 +54,7 @@ int largestRowSum(int arr[][3], int row, int col)
         }
     }
     cout << "The maximum sum is " << maxi << endl;
-    return row;
+    return rowIndex;
 }
 
 int main()
