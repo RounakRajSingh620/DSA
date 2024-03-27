@@ -31,7 +31,7 @@ int main()
         }
     }
     */
-
+/*
     // taking input ->col wise input
     for (int col = 0; col < 4; col++)
     {
@@ -40,6 +40,7 @@ int main()
             cin >> arr[row][col];
         }
     }
+    */
     // print the array
     for (int row = 0; row < 3; row++)
     {
