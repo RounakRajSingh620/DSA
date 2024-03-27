@@ -20,7 +20,7 @@ int main()
 {
     // create 2d array
     int arr[3][4];
-    /*
+    
         // taking input ->row wise input
 
         for (int row = 0; row < 3; row++)
@@ -30,7 +30,7 @@ int main()
             cin >> arr[row][col];
         }
     }
-    */
+    
 /*
     // taking input ->col wise input
     for (int col = 0; col < 4; col++)
