@@ -21,9 +21,9 @@ int modularExponentiation(int x, int n, int m)
 }
 int main()
 {
-    int x = 3;          // base
-    int n = 2;          // exponent
-    int m = 1000000007; // modulus
+    int x = 3;       
+    int n = 2;       
+    int m = 1000000007; 
 
     int result = modularExponentiation(x, n, m);
 
