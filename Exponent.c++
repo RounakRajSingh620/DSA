@@ -19,3 +19,15 @@ int modularExponentiation(int x, int n, int m)
     }
     return res;
 }
+int main()
+{
+    int x = 3;          // base
+    int n = 2;          // exponent
+    int m = 1000000007; // modulus
+
+    int result = modularExponentiation(x, n, m);
+
+    cout << "Result of modular exponentiation: " << result << endl;
+
+    return 0;
+}
