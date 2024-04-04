@@ -7,4 +7,10 @@ int main()
 
     // address of num
     cout << "address of num  " << &num << endl;
+
+    // pointer variable
+    int *ptr = &num;
+    cout << "Value is : " << *ptr << endl;
+
+    return 0;
 }
