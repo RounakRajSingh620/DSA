@@ -14,5 +14,9 @@ int main()
     (*p)++;
     cout << "after" << num << endl;
 
+    // copying the pointer
+    int *q = p;
+    cout << p << " - " << q << endl;
+    cout << *p << " - " << *q << endl;
     return 0;
 }
