@@ -8,5 +8,9 @@ int main()
     std::cout << arr[0] << endl;
     std::cout << "address of first memory block : " << &arr[0] << endl;
     cout << "4th " << *arr << endl;
+    cout << "5th " << *arr + 1 << endl;
+    cout << "6th " << *(arr + 1) << endl;
+    cout << "7th " << *(arr) + 1 << endl;
+
     return 0;
 }
