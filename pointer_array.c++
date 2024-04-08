@@ -2,8 +2,7 @@
 using namespace std;
 int main()
 {
-    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-
+    int arr[10] = {23,122,41,67,55};
     std::cout << "address of first memory block: " << arr << endl;
     std::cout << arr[0] << endl;
     std::cout << "address of first memory block : " << &arr[0] << endl;
@@ -11,6 +10,11 @@ int main()
     cout << "5th " << *arr + 1 << endl;
     cout << "6th " << *(arr + 1) << endl;
     cout << "7th " << *(arr) + 1 << endl;
+    cout << "8th " << arr[2] + 1 << endl;
+    cout << "9th " << *(arr + 2) << endl;
+
+    int i=3;
+    cout<<i[arr]<<endl; // arr[i] = i[arr]
 
     return 0;
 }
