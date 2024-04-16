@@ -41,7 +41,7 @@ int main()
 
     int arr[10];
     // ERROR
-    arr[10] = arr+1;
+    // arr[10] = arr+1;
 
     int *ptr = &arr[0];
     cout << ptr << endl;
