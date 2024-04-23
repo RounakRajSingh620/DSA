@@ -9,4 +9,8 @@ int main()
 
     cout<< " i : " << i << endl;
     
+    cout<<"printing p : "<<p<<endl;
+    cout<<"printing p : "<<&p<<endl;
+
+    return 0;
 }
