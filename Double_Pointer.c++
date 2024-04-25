@@ -7,10 +7,14 @@ int main()
     int *p = &i;
     int **q = &p;
 
-    cout<< " i : " << i << endl;
-    
-    cout<<"printing p : "<<p<<endl;
-    cout<<"printing p : "<<&p<<endl;
+    cout << " i : " << i << endl;
+
+    cout << "printing p : " << p << endl;
+    cout << "printing p : " << &p << endl;
+
+    cout << *q << endl;
+
+    cout << **q << endl;
 
     return 0;
 }
