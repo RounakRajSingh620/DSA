@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-void update(int **p)
+void update(int **q)
 {
-    p = p + 1;
+    // p = p + 1;
     //  kuch change hoga
 
-    // *p=*p+1;
+    *q=*q+1;
     // kuch change hoga??
 
     // **p=**p+1;
