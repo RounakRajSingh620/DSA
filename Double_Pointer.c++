@@ -9,7 +9,7 @@ void update(int **q)
     // *q=*q+1;
     // kuch change hoga Yes
 
-    // **q=**q+1;
+     **q=**q+1;
     // kuch change hoga YES
 }
 
