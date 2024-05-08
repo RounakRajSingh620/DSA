@@ -3,7 +3,7 @@ using namespace std;
 
 void update(int **q)
 {
-    // p = p + 1;
+    p = p + 1;
     //  kuch change hoga NO
 
     // *q=*q+1;
