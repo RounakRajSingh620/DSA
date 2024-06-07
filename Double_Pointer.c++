@@ -3,13 +3,13 @@ using namespace std;
 
 void update(int **q)
 {
-    p = p + 1;
+    int p = p + 1;
     //  kuch change hoga NO
 
     // *q=*q+1;
     // kuch change hoga Yes
 
-     **q=**q+1;
+    **q = **q + 1;
     // kuch change hoga YES
 }
 
