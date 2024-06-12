@@ -7,10 +7,7 @@ int factorial(int n)
 
         return 1;
 
-    int small = factorial(n - 1);
-    int big = n * small;
-
-    return big;
+    return n * factorial(n - 1);
 }
 
 int main()
