@@ -19,6 +19,7 @@ bool binarySearch(int *arr, int s, int e, int key)
         return false;
     }
     int mid = s + (e - s) / 2;
+    cout << "value of mid " << arr[mid]             << endl;
     if (arr[mid] == key)
     {
         return true;
