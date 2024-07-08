@@ -1,3 +1,8 @@
+/*space Complexity - O(n)
+time Commplexity - O(nlog n) (average case)
+time Commplexity - O(n^2) (worst case)
+*/
+
 #include <iostream>
 using namespace std;
 
