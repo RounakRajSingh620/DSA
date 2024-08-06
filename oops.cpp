@@ -8,9 +8,35 @@ private:
 
 public:
     char level;
+
+    // constructor
+    Hero()
+    {
+        cout << "Constructor called" << endl;
+    }
+    // parameterized constructor
+    Hero(int health)
+    {
+        cout << "this-> " << this << endl;
+        this->health = health;
+    }
+    Hero(int health, char level)
+    {
+        this->health = health;
+        this->level = level;
+    }
+    // copy constructor
+    Hero(Hero &h)
+    {
+        cout << "Copy constructor called" << endl;
+        this->health = h.health;
+        this->level = h.level;
+    }
+    
     void print()
     {
-        cout << level << endl;
+        cout << "Health is: " << this->health << endl;
+        cout << "Level is: " << this->level << endl;    
     }
 
     int getHealth()
@@ -35,6 +61,26 @@ public:
 
 int main()
 {
+    // copy constructor
+    Hero rai(40, 'Z');
+    rai.print();
+
+    Hero raja(rai);
+    raja.print();
+
+
+
+    // Hero raunak(20);
+    // cout<<"address of raunak "<<&raunak<<endl;
+    // raunak.getHealth();
+
+    // Hero *raunak1 = new Hero();
+    // raunak1->getHealth();
+    // // raunak1->setHealth(30);
+    // // raunak1->setlevel('A');
+    // // raunak1->print();
+
+    /*
     // static allocation
     Hero a;
     a.setHealth(80);
@@ -48,9 +94,10 @@ int main()
     b->setlevel('B');
     cout << "health is: " << (*b).getHealth() << endl;
     cout << "level is: " << (*b).getLevel() << endl;
-    
+
     cout << "Health is:  " << b->getHealth() << endl;
     cout << "level is: " << b->getLevel() << endl;
+    */
 
     // // create object of class Hero
     // Hero h1;
