@@ -7,12 +7,14 @@ private:
     int health;
 
 public:
+    char *name;
     char level;
 
     // constructor
     Hero()
     {
         cout << "Constructor called" << endl;
+        name = new char[100];
     }
     // parameterized constructor
     Hero(int health)
@@ -32,11 +34,14 @@ public:
         this->health = h.health;
         this->level = h.level;
     }
-    
+
     void print()
     {
-        cout << "Health is: " << this->health << endl;
-        cout << "Level is: " << this->level << endl;    
+        cout << endl;
+        cout << "[ Name is: " << this->name << " ,";
+        cout << "Health is: " << this->health << " ,";
+        cout << "Level is: " << this->level << " ]" << endl;
+        cout << endl;
     }
 
     int getHealth()
@@ -57,18 +62,41 @@ public:
     {
         level = l;
     }
+
+    // void setname(char name[100])
+    // {
+    //     strcpy(this->name, name);
+    // }
+
+    ~Hero()
+    {
+        cout << "Destructor called" << endl;
+    }
 };
 
 int main()
 {
-    // copy constructor
-    Hero rai(40, 'Z');
-    rai.print();
+    // destructor
+    Hero a;
 
-    Hero raja(rai);
-    raja.print();
+    Hero *b = new Hero();
+    delete b;
 
+    // shallowcopy
+    // Hero h5;
+    // h5.setHealth(100);
+    // h5.setlevel('A');
+    // char name[] = "raunak";
+    // h5.setname(name);
 
+    // h5.print();
+
+    // // copy constructor
+    // Hero rai(40, 'Z');
+    // rai.print();
+
+    // Hero raja(rai);
+    // raja.print();
 
     // Hero raunak(20);
     // cout<<"address of raunak "<<&raunak<<endl;
