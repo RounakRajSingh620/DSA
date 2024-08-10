@@ -46,7 +46,7 @@ int main()
 {
     // inheritance
     Male obj1;
-    cout<<obj1.getAge()<<endl;
+    cout<<obj1.age<<endl;
     cout<<obj1.height<<endl;
     cout<<obj1.weight<<endl;
     cout<<obj1.color<<endl;
