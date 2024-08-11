@@ -39,7 +39,7 @@ public:
         cout << "output " << value2 - value1 << endl;
     }
 };
-
+// run time polymorphism - virtual function
 // function/method overriding
 class Animal
 {
