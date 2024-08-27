@@ -73,6 +73,8 @@ int main()
     print(head);
     InsertAtPosition(head, 2, 20);
     print(head);
+    InsertAtPosition(head,4,25);
+    print(head);
     InsertAtTail(tail, 50);
     print(tail);
 
