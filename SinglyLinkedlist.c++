@@ -7,10 +7,24 @@ public:
     int data;
     Node *next;
 
+    // constructor
     Node(int data)
     {
         this->data = data;
         this->next = NULL;
+    }
+
+    // destructor
+    ~Node()
+    {
+        int value = this->data;
+        // memory free
+        if (this->next != NULL)
+        {
+            delete next;
+            this->next = NULL;
+        }
+        cout << "Deleting Node with value: " << value << endl;
     }
 };
 
@@ -56,6 +70,35 @@ void InsertAtPosition(Node *&head, Node *&tail, int pos, int d)
     nodetoinsert->next = temp->next;
     temp->next = nodetoinsert;
 }
+
+void deleteNode(int pos, Node *&head)
+{
+    // Delete first node
+    if (pos == 1)
+    {
+        Node *temp = head;
+        head = head->next;
+        temp->next = NULL;
+        delete temp;
+    }
+    else
+    {
+        // delete middle node or last node
+        Node *curr = head;
+        Node *prev = NULL;
+        int cnt = 1;
+        while (cnt < pos)
+        {
+            prev = curr;
+            curr = curr->next;
+            cnt++;
+        }
+        prev->next = curr->next;
+        curr->next = NULL;
+        delete curr;
+    }
+}
+
 void print(Node *&head)
 {
     Node *temp = head;
@@ -70,34 +113,27 @@ void print(Node *&head)
 int main()
 {
     // created node
-    Node *node1 = new Node(10);
-    // cout << node1->data << endl;
-    // cout << node1->next << endl;
-    // Node *node2 = new Node(20);
-    // cout << node2->data << endl;
-    // cout << node2->next << endl;
+    Node *node1 = new Node(25);
 
     // head points to node1
     Node *head = node1;
     Node *tail = node1;
     print(head);
 
-    InsertAtHead(head, 30);
-    print(head);
-
     InsertAtHead(head, 10);
     print(head);
 
-    InsertAtPosition(head,tail, 2, 20);
+    InsertAtPosition(head, tail, 2, 20);
     print(head);
 
-    InsertAtPosition(head,tail, 4, 25);
+    InsertAtPosition(head, tail, 4, 30);
+    print(head);
+    
+    InsertAtTail(tail, 35);
     print(head);
 
-    InsertAtTail(tail, 50);
-    print(tail);
-    InsertAtTail(tail, 60);
-    print(tail);
+    deleteNode(5, head);
+    print(head);
 
     return 0;
 }
