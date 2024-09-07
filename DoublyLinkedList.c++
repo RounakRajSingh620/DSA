@@ -14,6 +14,16 @@ public:
         this->prev = NULL;
         this->next = NULL;
     }
+    ~Node()
+    {
+        int val = this->data;
+        if (this->next != NULL)
+        {
+            delete next;
+            next = NULL;
+        }
+        cout << "Memory Free  " << val << endl;
+    }
 };
 // traversing the linked list
 void print(Node *head)
@@ -104,6 +114,35 @@ void InsertatPos(Node *&tail, Node *&head, int pos, int d)
     temp->next = nodetoInsert;
     nodetoInsert->prev = temp;
 }
+void deleteNode(int pos, Node *&head)
+{
+    // Delete first node
+    if (pos == 1)
+    {
+        Node *temp = head;
+        temp->next->prev = NULL;
+        head = temp->next;
+        temp->next = NULL;
+        delete temp;
+    }
+    else
+    {
+        // delete middle node or last node
+        Node *curr = head;
+        Node *prev = NULL;
+        int cnt = 1;
+        while (cnt < pos)
+        {
+            prev = curr;
+            curr = curr->next;
+            cnt++;
+        }
+        curr->prev = NULL;
+        prev->next = curr->next;
+        curr->next = NULL;
+        delete curr;
+    }
+}
 
 int main()
 {
@@ -128,6 +167,8 @@ int main()
     InsertatPos(tail, head, 1, 101);
     print(head);
     InsertatPos(tail, head, 7, 102);
+    print(head);
+    deleteNode(7, head);
     print(head);
 
     return 0;
