@@ -132,7 +132,7 @@ int main()
     InsertNode(tail, 3, 4);
     print(tail);
 
-    // deleteNode(tail, 3);
+    deleteNode(tail, 3);
     print(tail);
     deleteNode(tail, 10);
     print(tail);
